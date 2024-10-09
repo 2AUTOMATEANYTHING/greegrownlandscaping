@@ -2,11 +2,9 @@
 import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
-
+import CallUsModal from './CallUsModal'
 const GetApp = () => {
-  const handleCall = () => {
-    window.location.href = 'tel:+61430309424'; // Replace with the actual phone number
-  };
+ 
 
   const handleMail = () => {
     window.location.href = 'mailto:info@greengrowlandscape.com.au'; // Replace with the actual email address
@@ -20,14 +18,7 @@ const GetApp = () => {
             Ready to create your dream landscape?
           </p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
-            <Button
-              type="button"
-              title="Call us"
-              icon="/call-bold.svg"
-              variant="btn_white hover:bg-neutral-200 duration-300"
-              full
-              handleClick={handleCall}
-            />
+            <CallUsModal />
             <Button
               type="button"
               title="E-mail us"
