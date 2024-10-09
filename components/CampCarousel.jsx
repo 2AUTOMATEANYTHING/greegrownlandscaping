@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Trees } from "lucide-react";
 
 const CampCarousel = () => {
   const FEATURE_GROUPS = [
@@ -98,7 +99,10 @@ const CampCarousel = () => {
   
 
   return (
-    <section className="2xl:max-container px-5 relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20" id="services">
+    <section
+      className="2xl:max-container px-5 relative flex flex-col py-10 lg:mb-10 lg:py-10 xl:mb-10"
+      id="services"
+    >
       <div className="mb-5 lg:mb-10">
         <h2 className="bold-40 lg:bold-64 text-center">Our Services</h2>
         <p className="max-w-3xl mx-auto text-xl text-center uppercase regular-18 -mt-1 mb-3 text-green-50">
@@ -109,19 +113,24 @@ const CampCarousel = () => {
       {FEATURE_GROUPS.map((group, groupIndex) => (
         <div key={groupIndex} className="lg:my-10">
           <InView
-          variants={{
-            hidden: { opacity: 0, y: 100, filter: 'blur(4px)' },
-            visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-          }}
-          viewOptions={{ margin: '0px 0px -200px 0px' }}
-          transition={{ duration: 0.3, ease: 'easeInOut' }}
-        >
-          <div className={`mb-5 lg:bg-green-50 rounded-t-2xl self-center lg:w-max p-5 lg:-mb-3 lg:ml-14 z-10`}>
-            <h3 className="bold-20 lg:bold-32 lg:text-white">{group.title}</h3>
-            <p className="regular-16 xl:text-left text-gray-30 lg:text-neutral-100 xl:max-w-[520px]">
-              {group.description}
-            </p>
-          </div>
+            variants={{
+              hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+              visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+            }}
+            viewOptions={{ margin: "0px 0px -200px 0px" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <div
+              className={`mb-5 lg:bg-green-50 rounded-t-2xl self-center bg-[url(/pattern-topo.png)] bg-cover lg:w-max p-5 lg:-mb-3 lg:ml-14 z-10`}
+            >
+              
+              <h3 className="bold-20 lg:bold-32 lg:text-white">
+                {group.title}
+              </h3>
+              <p className="regular-16 xl:text-left text-gray-30 lg:text-neutral-100 xl:max-w-[520px]">
+                {group.description}
+              </p>
+            </div>
           </InView>
 
           <Carousel className="lg:mb-5">
@@ -131,14 +140,28 @@ const CampCarousel = () => {
                   <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
                     <CampSite backgroundImage={slide.url} />
                   </div>
-                  
-                  <div className={`${group.titleLeft ? 'flexEnd':'flexStart'} mt-10 px-6 lg:${index % 2 === 0 ? "-mt-60 lg:mr-6" : "-mt-60 lg:ml-6"}`}>
+
+                  <div
+                    className={`${
+                      group.titleLeft ? "flexEnd" : "flexStart"
+                    } mt-10 px-6 lg:${
+                      index % 2 === 0 ? "-mt-60 lg:mr-6" : "-mt-60 lg:ml-6"
+                    }`}
+                  >
                     <div className="bg-green-50/75 hover:bg-green-50 duration-300 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
                       <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
                         <strong>{slide.title}</strong>
                       </h2>
-                      <p className="regular-14 xl:regular-16 mt-5 text-white">{slide.text}</p>
-                      <Image src="/quote.svg" alt="quote" width={186} height={219} className="camp-quote" />
+                      <p className="regular-14 xl:regular-16 mt-5 text-white">
+                        {slide.text}
+                      </p>
+                      <Image
+                        src="/quote.svg"
+                        alt="quote"
+                        width={186}
+                        height={219}
+                        className="camp-quote"
+                      />
                     </div>
                   </div>
                 </CarouselItem>
