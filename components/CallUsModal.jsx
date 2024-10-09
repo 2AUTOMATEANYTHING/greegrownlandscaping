@@ -1,12 +1,13 @@
-'use client'
+"use client";
+
 import { AnimatePresence, motion } from "framer-motion";
 import { FiAlertCircle } from "react-icons/fi";
 import { useState } from "react";
 import Button from "./Button";
+import { Phone, ClipboardCheck } from "lucide-react";
 
 const CallUsModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-   
 
   return (
     <>
@@ -24,6 +25,16 @@ const CallUsModal = () => {
 };
 
 const SpringModal = ({ isOpen, setIsOpen }) => {
+  const [isCopied, setIsCopied] = useState(false);
+  const phoneNumber = "+61430309424";
+
+  const handleCopyToClipboard = () => {
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -44,22 +55,35 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
             <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
             <div className="relative z-10">
               <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto">
-                <FiAlertCircle />
+                <Phone className="text-green-50" />
               </div>
               <h3 className="text-3xl font-bold text-center mb-2">
-                One more thing!
+                Let's talk now!!
               </h3>
-              <p className="text-center mb-6">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                aperiam vitae, sapiente ducimus eveniet in velit.
+              <p
+                className="text-center mb-6 cursor-pointer underline text-white"
+                onClick={handleCopyToClipboard}
+              >
+                {phoneNumber}
               </p>
+              {isCopied && (
+                <div className="text-center text-green-200 mb-4">
+                  <ClipboardCheck className="inline-block mr-1" />
+                  Number copied!
+                </div>
+              )}
               <div className="flex gap-2">
-            
+                <a
+                  href={`tel:${phoneNumber}`}
+                  className="bg-white hover:opacity-90 transition-opacity text-green-600 font-semibold w-full py-2 rounded text-center"
+                >
+                  Call Now!!
+                </a>
                 <button
                   onClick={() => setIsOpen(false)}
                   className="bg-white hover:opacity-90 transition-opacity text-green-600 font-semibold w-full py-2 rounded"
                 >
-                  Call Us
+                  Close
                 </button>
               </div>
             </div>

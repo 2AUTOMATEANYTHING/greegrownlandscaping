@@ -47,7 +47,8 @@ const BlogPage = ({ params }) => {
   }
 
   return (
-    <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
+<div>
+      <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
       <Link href="/blogs" className="flex gap-3">
         <ArrowLeft /> Back
       </Link>
@@ -66,6 +67,8 @@ const BlogPage = ({ params }) => {
         style={{ marginTop: "20px" }}
       />
     </div>
+
+</div>
   );
 };
 

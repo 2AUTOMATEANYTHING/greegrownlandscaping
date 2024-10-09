@@ -14,17 +14,18 @@ const CampCarousel = () => {
   const FEATURE_GROUPS = [
     {
       title: "Outdoor Structures",
-      description: "Enhance the functionality and aesthetic appeal of your outdoor space with our expertly crafted outdoor structures.",
-      titleLeft:true,
+      description:
+        "Enhance the functionality and aesthetic appeal of your outdoor space with our expertly crafted outdoor structures.",
+      titleLeft: true,
       features: [
         {
           title: "Decking",
-          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/66f624760005c9175cef/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/670637c6001c7e5a7a6c/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Elevate your outdoor living space with our beautifully crafted decks, perfect for relaxation and entertainment. Our expert team designs and builds durable decks with Eco and timber that complement your home's architecture. Choose from various materials and styles to suit your taste and budget.",
         },
         {
           title: "Retaining Walls",
-          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/66f6247c003e6408838a/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/670638e5000b691a5a88/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Our retaining wall solutions such as Rendered Retaining Walls and Split Space are engineered to withstand environmental elements while enhancing your landscape's aesthetic appeal.",
         },
         {
@@ -32,16 +33,22 @@ const CampCarousel = () => {
           url: "https://cloud.appwrite.io/v1/storage/buckets/66f786c6000a3554aa84/files/66f851c000355b4cd98e/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Transform your outdoor spaces with our stunning wall paneling solutions, adding texture and visual interest. Our panels are crafted from high-quality materials, ensuring durability and low maintenance.",
         },
+        {
+          title: "Outdoor post box",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/67063784002ab6a3c637/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          text: "Our outdoor post boxes are designed to complement your home's architecture while providing a secure and stylish solution for your mail. Choose from a range of materials and styles to suit your needs.",
+        },
       ],
     },
     {
       title: "Hardscapes",
-      description: "Transform your outdoor environment with our hardscape services, designed to provide both beauty and durability.",
-      titleLeft:false,
+      description:
+        "Transform your outdoor environment with our hardscape services, designed to provide both beauty and durability.",
+      titleLeft: false,
       features: [
         {
           title: "Concrete",
-          url: "https://cloud.appwrite.io/v1/storage/buckets/66f786c6000a3554aa84/files/66f851df002e0d1ad641/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6706385a0029b8c3f0ed/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Enhance your outdoor space with our professionally laid concrete, perfect for driveways, patios, and walkways. Our team delivers durable, long-lasting concrete solutions that withstand heavy use.",
         },
         {
@@ -53,8 +60,9 @@ const CampCarousel = () => {
     },
     {
       title: "Lawn and Garden Solutions",
-      description: "Want to take your lawn and garden to the next level? We offer a range of solutions to enhance your outdoor space.",
-      titleLeft:true,
+      description:
+        "Want to take your lawn and garden to the next level? We offer a range of solutions to enhance your outdoor space.",
+      titleLeft: true,
       features: [
         {
           title: "Synthetic Grass",
@@ -70,8 +78,9 @@ const CampCarousel = () => {
     },
     {
       title: "Fencing",
-      description: "Secure your property and enhance its privacy with our fencing solutions, available in various styles and materials.",
-      titleLeft:false,
+      description:
+        "Secure your property and enhance its privacy with our fencing solutions, available in various styles and materials.",
+      titleLeft: false,
       features: [
         {
           title: "Color Bond Fencing",
@@ -89,7 +98,7 @@ const CampCarousel = () => {
   
 
   return (
-    <section className="2xl:max-container px-5 relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20" id="camp">
+    <section className="2xl:max-container px-5 relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20" id="services">
       <div className="mb-5 lg:mb-10">
         <h2 className="bold-40 lg:bold-64 text-center">Our Services</h2>
         <p className="max-w-3xl mx-auto text-xl text-center uppercase regular-18 -mt-1 mb-3 text-green-50">

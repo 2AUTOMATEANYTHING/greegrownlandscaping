@@ -10,15 +10,11 @@ const Hero1 = () => {
     <section className="relative bg-[url(/herobgimage.png)] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-gray-900/75  "></div>
 
+          <div className="flex flex-col lg:flex-row items-center lg:items-end gap-3 absolute top-[30px] left-[30px]">
+           <Image src="/logo-dark.png" alt="logo" width={100} height={100} />
+          </div>
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center md:text-left ">
-          <div className="flex flex-col lg:flex-row items-center lg:items-end gap-3 ">
-            <img src="/logo-symbol.png" className="aspect-auto h-20" />
-            <h2 className="font-semibold text-white text-xl">
-              Green <span className="text-[#94c019]">Grow</span>{" "}
-              <span className="text-[#bb9200]">Landscape</span>
-            </h2>
-          </div>
           <h1 className="bold-52 lg:bold-88 text-white">
             Transform <br /> <span className="text-[#30af5b]">Green</span>{" "}
             Paradise
@@ -58,9 +54,7 @@ const Hero1 = () => {
               title="Get Started"
               variant="btn_green hover:bg-green-700 duration-300"
             />
-           <ExampleWrapper />
-         
-           
+            <ExampleWrapper />
           </div>
         </div>
       </div>

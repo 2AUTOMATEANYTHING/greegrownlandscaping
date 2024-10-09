@@ -12,7 +12,8 @@ const Footer = () => {
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
-          Whether you're looking for a full yard transformation or luxurious outdoor lightings, we’re here to help.
+          Whether you're looking for a full yard transformation or luxurious
+          outdoor lightings, we’re here to help.
         </p>
 
         <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
@@ -45,6 +46,15 @@ const Footer = () => {
               Projects{" "}
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-gray-700 transition hover:text-gray-700/75"
+              href="/blogs"
+            >
+              {" "}
+              Blogs{" "}
+            </Link>
+          </li>
 
           <li>
             <Link
@@ -55,13 +65,11 @@ const Footer = () => {
               Contact{" "}
             </Link>
           </li>
-
-
         </ul>
 
-     
         <p className="mt-12 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} 2AutomateAnything. All rights reserved.
+          &copy; {new Date().getFullYear()} 2AutomateAnything. All rights
+          reserved.
         </p>
       </div>
     </footer>

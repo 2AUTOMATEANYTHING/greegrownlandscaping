@@ -3,12 +3,8 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 import CallUsModal from './CallUsModal'
+import MailUsModal from './MailUsModal'
 const GetApp = () => {
- 
-
-  const handleMail = () => {
-    window.location.href = 'mailto:info@greengrowlandscape.com.au'; // Replace with the actual email address
-  };
   return (
     <section className="flexCenter w-full flex-col pb-[100px]" id='getapp'>
       <div className="get-app">
@@ -19,14 +15,15 @@ const GetApp = () => {
           </p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
             <CallUsModal />
-            <Button
+            <MailUsModal />
+            {/* <Button
               type="button"
               title="E-mail us"
               icon="/mail.svg"
               variant="btn_dark_green_outline hover:bg-green-90/90 duration-300"
               full
               handleClick={handleMail}
-            />
+            /> */}
           </div>
         </div>
 
