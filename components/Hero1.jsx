@@ -6,6 +6,14 @@ import SpringModal from './SpringModal'
 import ExampleWrapper from './SpringModal'
 const Hero1 = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      const offset = 30; // Space from the top
+      const top = section.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: "smooth" });
+    }
+  };
   return (
     <section className="relative bg-[url(/herobgimage.png)] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-gray-900/75  "></div>
@@ -53,6 +61,7 @@ const Hero1 = () => {
               type="button"
               title="Get Started"
               variant="btn_green hover:bg-green-700 duration-300"
+              handleClick={()=>scrollToSection('services')}
             />
             <ExampleWrapper />
           </div>

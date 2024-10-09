@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { FiAlertCircle } from "react-icons/fi";
 import { useState } from "react";
 import Button from "./Button";
+import { Youtube } from "lucide-react";
 
 const ExampleWrapper = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,11 +40,11 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
           >
             <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
             <div className="relative z-10">
-              <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-indigo-600 grid place-items-center mx-auto">
-                <FiAlertCircle />
+              <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-green-600 grid place-items-center mx-auto">
+                <Youtube />
               </div>
               <h3 className="text-3xl font-bold text-center mb-2">
-                One more thing!
+                Get to know us better!!
               </h3>
 
               {/* Responsive Video Container */}
@@ -61,7 +62,6 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
               </div>
 
               <div className="flex gap-2 mt-4">
-                
                 <button
                   onClick={() => setIsOpen(false)}
                   className="bg-white hover:bg-neutral-200 transition-opacity text-green-600 font-semibold w-full py-2 rounded"
