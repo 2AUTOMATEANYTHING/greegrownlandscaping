@@ -94,6 +94,24 @@ const CampCarousel = () => {
           text: "Louvered Fencing combines privacy with airflow and light, making it ideal for gardens, patios, and pool areas. The slat design allows for a contemporary look while maintaining a sense of openness and comfort.",
         },
       ],
+    },,
+    {
+      title: "Lighting and Water Features",
+      description:
+        "Secure your property and enhance its privacy with our fencing solutions, available in various styles and materials.",
+      titleLeft: false,
+      features: [
+        {
+          title: "Garden Lights",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6707897a000487bb70a7/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          text: "Illuminate your landscape's beauty with our expertly designed garden lighting solutions, highlighting key features 	and 	ambiance. Our energy-efficient options enhance safety, visibility, and aesthetic appeal. Choose from 	various styles 	and designs to match your landscape.",
+        },
+        {
+          title: "Water Feature and Waterfalls",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/670789e2001ef302e017/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          text: "Create serene, breathtaking spaces with our custom water features and waterfalls, adding visual and auditory 	charm. 	Our experts design and install unique, low-maintenance solutions that enhance your landscape’s 	tranquility. 	Transform your outdoor space into a relaxing oasis",
+        },
+      ],
     },
   ];
   
@@ -134,7 +152,7 @@ const CampCarousel = () => {
           </InView>
 
           <Carousel className="lg:mb-5">
-            <CarouselContent>
+            <CarouselContent  >
               {group.features.map((slide, index) => (
                 <CarouselItem key={index}>
                   <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
@@ -167,8 +185,8 @@ const CampCarousel = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="bg-green-50 hover:bg-green-50/80 text-white hover:text-white" />
-            <CarouselNext className="bg-green-50 hover:bg-green-50/80 text-white hover:text-white" />
+            <CarouselPrevious className="bg-green-50 hover:bg-green-500 text-white hover:text-white h-14 sm:h-20 w-14 sm:w-20  border-white border-[7px]" />
+            <CarouselNext className="bg-green-50 hover:bg-green-500 text-white hover:text-white h-14 sm:h-20 w-14 sm:w-20  border-white border-[7px] " />
           </Carousel>
         </div>
       ))}
