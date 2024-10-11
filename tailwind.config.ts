@@ -73,7 +73,7 @@ module.exports = {
       backgroundImage: {
         "bg-img-1": "url('/cimage.jpg')",
         "bg-img-2": "url('/img-2.png')",
-        "bg-img-3": "url('/MainCamp.png')",
+        "bg-img-3": "url('/MainCamp.jpg')",
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/getapp.png')",
         "pattern-2": "url('/hero-bg.png')",
