@@ -26,7 +26,7 @@ const CampCarousel = () => {
         },
         {
           title: "Retaining Walls",
-          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/670638e5000b691a5a88/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708be3c000a8ed610be/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Our retaining wall solutions such as Rendered Retaining Walls and Split Space are engineered to withstand environmental elements while enhancing your landscape's aesthetic appeal.",
         },
         {
@@ -38,6 +38,21 @@ const CampCarousel = () => {
           title: "Outdoor post box",
           url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/67063784002ab6a3c637/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Our outdoor post boxes are designed to complement your home's architecture while providing a secure and stylish solution for your mail. Choose from a range of materials and styles to suit your needs.",
+        },
+        {
+          title: "Aluminium Blade Infill Panels - Front Yard",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708ab450018d8b24eb1/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Add a modern touch to your front yard with Aluminium Blade Infill Panels, offering a sleek and stylish fencing solution that enhances your outdoor space.",
+        },
+        {
+          title: "Pergola",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708ac0a0017675ee4a7/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Create a shaded outdoor area with our custom-built pergolas. Perfect for garden spaces, they offer both beauty and functionality.",
+        },
+        {
+          title: "Fire Pit Area",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708ac50000e59d82745/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Gather around our custom-built fire pits to enjoy a cozy outdoor experience. Perfect for entertaining or relaxing under the stars.",
         },
       ],
     },
@@ -75,6 +90,21 @@ const CampCarousel = () => {
           url: "https://cloud.appwrite.io/v1/storage/buckets/66f786c6000a3554aa84/files/66f7876b0002b95db37e/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Optimize water usage and nurture your landscape with our efficient irrigation systems, designed for lawns and gardens. Our experts install and maintain systems ensuring healthy plant growth and water conservation.",
         },
+        {
+          title: "Buffalo Grass",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708bb8300360b2eea62/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Buffalo grass is a soft, low-maintenance grass that thrives in various climates. It's durable, making it an excellent choice for lawns, gardens, and areas with heavy foot traffic.",
+        },
+        {
+          title: "Kikuy Grass",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708bbaa00350154fccd/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Kikuy grass is a fast-growing, resilient option that covers lawns quickly and provides excellent coverage for large areas. It’s known for its resistance to drought and wear.",
+        },
+        {
+          title: "Pooch Grass",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708bbfc002e0c84a1c0/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Pooch grass offers lush, green coverage that’s ideal for ornamental lawns. It requires regular maintenance but rewards with a vibrant, thick lawn perfect for garden spaces.",
+        },
       ],
     },
     {
@@ -93,8 +123,14 @@ const CampCarousel = () => {
           url: "https://cloud.appwrite.io/v1/storage/buckets/66f786c6000a3554aa84/files/66f853b30004c0323a3b/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Louvered Fencing combines privacy with airflow and light, making it ideal for gardens, patios, and pool areas. The slat design allows for a contemporary look while maintaining a sense of openness and comfort.",
         },
+        {
+          title: "Timber Fencing",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708bb420036280faf18/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin", // Update with actual URL
+          text: "Timber Fencing offers a traditional and natural look, providing privacy and enhancing the aesthetics of your outdoor space with its timeless appeal.",
+        },
       ],
-    },,
+    },
+    ,
     {
       title: "Lighting and Water Features",
       description:
@@ -103,7 +139,7 @@ const CampCarousel = () => {
       features: [
         {
           title: "Garden Lights",
-          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6707897a000487bb70a7/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
+          url: "https://cloud.appwrite.io/v1/storage/buckets/66e97c69000b317e4d5b/files/6708bdbd00247847171e/view?project=66e977dc0033bd164c43&project=66e977dc0033bd164c43&mode=admin",
           text: "Illuminate your landscape's beauty with our expertly designed garden lighting solutions, highlighting key features 	and 	ambiance. Our energy-efficient options enhance safety, visibility, and aesthetic appeal. Choose from 	various styles 	and designs to match your landscape.",
         },
         {
